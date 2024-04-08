@@ -11,9 +11,9 @@ export const theme = {
         titleFont: '#3E3E3E',
     },
     media: {
-        smallDesc: 'screen and (max-width: 924px)',
-        tablet: 'screen and (max-width: 781px)',
-        mobile: 'screen and (max-width: 570px)',
+        medium: 'screen and (max-width: 1199px)',
+        tablet: 'screen and (max-width: 899px)',
+        mobile: 'screen and (max-width: 599px)',
     },
     animation: {
         transition: 'all .3s ease-in-out',

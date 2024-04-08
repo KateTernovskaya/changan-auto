@@ -9,6 +9,10 @@ import Bg3 from '../../assets/bg3.png'
 import Bg4 from '../../assets/bg4.png'
 
 export const Main = () => {
+
+
+
+
     return (
         <StyledMain>
             <Container>
@@ -46,7 +50,6 @@ export const Main = () => {
 };
 
 const StyledMain = styled.main`
-  border: 1px solid red;
   padding: 56px 0;
 `
 
@@ -63,6 +66,8 @@ const CardsWrapper = styled.div`
   gap: 12px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows:repeat(2, 250px) ;
+  
+  border: 1px solid red;
   
   grid-template-areas:
     "card1  card2 card4"
@@ -82,6 +87,22 @@ const CardsWrapper = styled.div`
 
   & div:nth-child(4) {
     grid-area: card4;
+  }
+  
+ @media ${theme.media.medium} {
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-areas:
+    "card1  card2 "
+    "card3  card4 ";
+ }
+
+  @media ${theme.media.tablet} {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "card1"
+    "card2"
+    "card3"
+    "card4";
   }
 `
 
