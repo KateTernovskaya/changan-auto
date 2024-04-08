@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/changan-auto/static/css/main.e6c13ad2.css",
+    "main.js": "/changan-auto/static/js/main.075446fb.js",
+    "static/media/bg4.png": "/changan-auto/static/media/bg4.5057d161df242d79c3e5.png",
+    "static/media/bg1.png": "/changan-auto/static/media/bg1.9c648b66e6e7a6652901.png",
+    "static/media/bg3.png": "/changan-auto/static/media/bg3.68f2f33963bc2e9e48b7.png",
+    "static/media/bg2.png": "/changan-auto/static/media/bg2.3919a9a8bbc0e97560c8.png",
+    "static/media/logo.svg": "/changan-auto/static/media/logo.2ac1f5a838d0a7689e53dc102aa1c505.svg",
+    "static/media/icon-sprite.svg": "/changan-auto/static/media/icon-sprite.960abd059565543e619c38f5231a6e08.svg",
+    "index.html": "/changan-auto/index.html",
+    "main.e6c13ad2.css.map": "/changan-auto/static/css/main.e6c13ad2.css.map",
+    "main.075446fb.js.map": "/changan-auto/static/js/main.075446fb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.075446fb.js"
+  ]
+}
