@@ -1,8 +1,8 @@
 import React from 'react';
-
-import {TabletMenu} from "./menu/menu/TabletMenu";
-import {MobileMenu} from "./menu/menu/MobileMenu";
-import {DesktopMenu} from "./menu/menu/DesktopMenu";
+import {TabletMenu} from "./menu/menu/tabletMenu";
+import {MobileMenu} from "./menu/menu/mobileMenu";
+import {DesktopMenu} from "./menu/menu/desktopMenu";
+import {S} from "./header_styles"
 
 export const Header = () => {
     const tablet = 1199;
@@ -18,10 +18,8 @@ export const Header = () => {
         return () => window.removeEventListener("resize", handleWindowResize);
     }, []);
 
-
-
     return (
-        <>
+        <S.Header>
             {width > tablet
                 ? <DesktopMenu/>
                 : width > tabletWithoutAddress
@@ -30,7 +28,6 @@ export const Header = () => {
                         ? <TabletMenu/>
                         : <MobileMenu/>
             }
-        </>
-
+        </S.Header>
     );
 };

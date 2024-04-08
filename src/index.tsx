@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import {GlobalStyle} from "./styles/Global.styled";
+import {GlobalStyle} from "./styles/global.styled";
 
 
 const root = ReactDOM.createRoot(

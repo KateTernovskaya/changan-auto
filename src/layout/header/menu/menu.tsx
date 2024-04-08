@@ -1,6 +1,6 @@
 import React from 'react';
-import {Link} from "../../../components/Link";
-import {FlexWrapper} from "../../../components/wrapper/FlexWrapper";
+import {Link} from "../../../components/link";
+import {FlexWrapper} from "../../../components/wrapper/flexWrapper";
 
 const itemsMenu = [
     {

@@ -1,5 +1,5 @@
 import styled, {css} from "styled-components";
-import {theme} from "../styles/Theme";
+import {theme} from "../styles/theme";
 
 type StyledBtnPropsType = {
     primary?: boolean
@@ -25,7 +25,7 @@ export const StyledBtn = styled.button<StyledBtnPropsType>`
   }
 
   ${props => props.primary && css<StyledBtnPropsType>`
-      background-color: ${theme.colors.primaryBtn};
+    background-color: ${theme.colors.primaryBtn};
     padding: 8px 42px;
     border: none;
     max-width: 200px;
@@ -35,7 +35,7 @@ export const StyledBtn = styled.button<StyledBtnPropsType>`
       background-color: ${theme.colors.hoverBtn};
     }
   `}
-  
+
 
 
 `

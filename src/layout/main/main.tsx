@@ -1,23 +1,18 @@
 import React from 'react';
-import styled from "styled-components";
-import {Container} from "../../components/wrapper/Container";
-import {theme} from "../../styles/Theme";
+import {Container} from "../../components/wrapper/container";
 import {Card} from "./cards/card";
-import Bg1 from '../../assets/bg1.png'
-import Bg2 from '../../assets/bg2.png'
-import Bg3 from '../../assets/bg3.png'
-import Bg4 from '../../assets/bg4.png'
+import Bg1 from '../../assets/marcet-section/bg1.png'
+import Bg2 from '../../assets/marcet-section/bg2.png'
+import Bg3 from '../../assets/marcet-section/bg3.png'
+import Bg4 from '../../assets/marcet-section/bg4.png'
+import {S} from './main_styles'
 
 export const Main = () => {
-
-
-
-
     return (
-        <StyledMain>
+        <S.Main>
             <Container>
-                <Title>Теперь услуги дилерского центра Вы можете можете получить онлайн!</Title>
-                <CardsWrapper>
+                <S.TitleMain>Теперь услуги дилерского центра Вы можете можете получить онлайн!</S.TitleMain>
+                <S.CardsWrapper>
                     <Card title={"Диагностика автомобиля перед покупкой"}
                           text={'Расскажем обо всех скрытых дефектах автомобиля с пробегом'}
                           btnText={'Записаться'}
@@ -43,66 +38,8 @@ export const Main = () => {
                           img={Bg4}
                           withLoupe
                     />
-                </CardsWrapper>
+                </S.CardsWrapper>
             </Container>
-        </StyledMain>
+        </S.Main>
     );
 };
-
-const StyledMain = styled.main`
-  padding: 56px 0;
-`
-
-const Title = styled.h2`
-  color: ${theme.colors.titleFont};
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 121%;
-`
-
-const CardsWrapper = styled.div`
-  padding: 32px 0;
-  display: grid;
-  gap: 12px;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows:repeat(2, 250px) ;
-  
-  border: 1px solid red;
-  
-  grid-template-areas:
-    "card1  card2 card4"
-    "card1  card3 card4";
-
-  & div:nth-child(1) {
-    grid-area: card1;
-  }
-
-  & div:nth-child(2) {
-    grid-area: card2;
-  }
-
-  & div:nth-child(3) {
-    grid-area: card3;
-  }
-
-  & div:nth-child(4) {
-    grid-area: card4;
-  }
-  
- @media ${theme.media.medium} {
-   grid-template-columns: repeat(2, 1fr);
-   grid-template-areas:
-    "card1  card2 "
-    "card3  card4 ";
- }
-
-  @media ${theme.media.tablet} {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-    "card1"
-    "card2"
-    "card3"
-    "card4";
-  }
-`
-
