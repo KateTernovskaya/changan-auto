@@ -1,8 +1,11 @@
 export const theme = {
     colors: {
+        headerBg: '#FBFBFB',
+
         primaryBtn: '#0b457f',
         hoverBtn: '#006cd8',
-        hoverLink: 'rgba(255,255,255, 1.5)',
+        hoverLink: 'rgba(255,255,255, 0.15)',
+
         font: '#666666',
         cardFont: '#FFFFFF',
         titleFont: '#3E3E3E',

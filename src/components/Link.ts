@@ -6,8 +6,8 @@ type LinkPropsType = {
 }
 
 export const Link = styled.a<LinkPropsType>`
-
-  a:hover{
-    border-bottom: 1px solid ${theme.colors.primaryBtn};
+font-size: 13px;
+  &:hover{
+    border-bottom: 1px solid ${theme.colors.font};
   }
 `

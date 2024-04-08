@@ -6,9 +6,10 @@ type StyledBtnPropsType = {
 }
 
 export const StyledBtn = styled.button<StyledBtnPropsType>`
-  border: none;
+  border: 1px solid white;
   font-size: 14px;
-  padding: 6px 20px;
+  padding: 8px 42px;
+  max-width: 204px;
   text-align: center;
   border-radius: 12px;
   background-color: transparent;
@@ -24,8 +25,10 @@ export const StyledBtn = styled.button<StyledBtnPropsType>`
 
   ${props => props.primary && css<StyledBtnPropsType>`
       background-color: ${theme.colors.primaryBtn};
+    border: none;
 
     &:hover {
+      border: none;
       background-color: ${theme.colors.hoverBtn};
     }
   `}

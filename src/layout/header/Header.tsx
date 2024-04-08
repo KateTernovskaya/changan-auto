@@ -6,6 +6,7 @@ import {FlexWrapper} from "../../components/wrapper/FlexWrapper";
 import {Menu} from "./menu/Menu";
 import {StyledBtn} from "../../components/Button";
 import {InfoString} from "./info/InfoString";
+import {theme} from "../../styles/Theme";
 
 export const Header = () => {
     return (
@@ -30,15 +31,14 @@ export const Header = () => {
                     </WorkTime>
                 </Container>
             </InfoBlock>
-
-
         </StyledHeader>
     );
 };
 
 const StyledHeader = styled.header`
-  border: 1px solid red;
-
+background-color: ${theme.colors.headerBg};
+  box-shadow: 0 5px 5px #CECECE;
+  
   ${Container} {
     padding: 12px 0;
     display: flex;
